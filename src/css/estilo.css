@@ -1,0 +1,20 @@
+body {
+  margin: 20px;
+}
+
+.activo {
+  font-weight: bold;
+  background-color: yellow;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  border: 1px solid gray;
+  margin: 2px;
+  cursor: pointer;
+}

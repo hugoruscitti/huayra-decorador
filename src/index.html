@@ -1,0 +1,22 @@
+<html ng-app='app'>
+
+<head>
+  <script src='js/angular.js'></script>
+  <script src='js/app.js'></script>
+
+  <link rel="stylesheet" href="css/cosmo.css">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+  <body ng-controller='MainCtrl'>
+    <h1>Selector de temas</h1>
+
+    <ul>
+      <li ng-class='obtener_clase($index, t)'
+          ng-repeat='t in data.temas'
+          ng-click='seleccionar($index)'
+          >{{t.nombre}}</li>
+    </ul>
+
+  </body>
+</html>
